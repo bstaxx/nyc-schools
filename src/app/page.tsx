@@ -1,7 +1,5 @@
 "use client"
 
-import Image from "next/image";
-import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -16,7 +14,6 @@ export default function Home() {
         console.log(data)
         setData( data )
       }
-
     } catch ( err ) {
       console.log( err )
     }
@@ -25,7 +22,7 @@ export default function Home() {
   useEffect(() => {
     getData()
   }, [] )
-  // console.log( data )
+
   return (
     <div data-testid="home">
       <h1 className="mb-3">NYC Schools</h1>
